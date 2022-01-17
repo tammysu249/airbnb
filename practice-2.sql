@@ -19,4 +19,9 @@
 -- | https://www.airbnb.com/rooms/25367014 | 16           |
 -- | https://www.airbnb.com/rooms/25682427 | 16           |
 
-
+.schema
+.mode column
+.headers on
+SELECT url, accommodates 
+FROM listings 
+WHERE accommodates = 16
